@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>database</type>
+		<description>Language labels for database tables/fields belonging to extension 'safeedit'</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="tt_content.tx_safeedit_orig">Original</label>
+			<label index="pages.tx_safeedit_orig">Original</label>
+			<label index="tt_news.tx_safeedit_orig">Original</label>
+		</languageKey>
+	</data>
+</T3locallang>
