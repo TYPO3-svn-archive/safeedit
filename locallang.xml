@@ -8,9 +8,9 @@
 	<data type="array">
 		<languageKey index="default" type="array">
 			<label index="the_beuser">The BE-User</label>
-			<label index="update_start">updated this record.  If you save your version of the record you will override this update.</label>
+			<label index="update_start">updated this item. If you save your version of the item you will override this update.</label>
 			<label index="update_change">You can either discard your changes and</label>
-			<label index="update_nochange">As you have not yet made any changes to the current record, it is recommended that you </label>
+			<label index="update_nochange">As you have not yet made any changes to the current item, it is recommended that you </label>
 			<label index="update_newversion">update to the newest version</label>
 			<label index="update_or">or</label>
 			<label index="update_newwindow">compare your current draft to the new version (opens new window)</label>
@@ -18,13 +18,30 @@
 			<label index="edit">is currently editing this record.</label>
 			<label index="draft_saved">Draft saved on </label>
 			<label index="draft_date_format">M jS, Y G:i:s</label>
-			<label index="you_have_draft">You have an auto-saved draft.  You can either</label>
+			<label index="you_have_draft">You have an auto-saved draft. You can either</label>
 			<label index="load">load the draft</label>
 			<label index="or_edit">or continue to edit the current version (this will discard your draft).</label>
 			<label index="draft_outdated">Your draft is outdated as another user has</label>
-			<label index="templavoila_update">updated this record.  You should </label>
+			<label index="templavoila_update">updated this item. You should </label>
 		</languageKey>
-		<languageKey index="dk"></languageKey>
+		<languageKey index="dk">
+			<label index="the_beuser">Backend-Brugeren</label>
+			<label index="update_start">opdateret dette element. Hvis du gemmer din version af dette element overskriver du denne opdatring.</label>
+			<label index="update_change">Du kan enten kassere dine ændringer og</label>
+			<label index="update_nochange">Da du endnu ikke har foretaget nogen ændringer i det nuværende element, anbefales det at du </label>
+			<label index="update_newversion">opdatere til den nyeste version</label>
+			<label index="update_or">eller</label>
+			<label index="update_newwindow">sammenlign din nuværende kladde med den nye version (åbner nyt vindue)</label>
+			<label index="update_end">og manuelt fusionere ændringerne.</label>
+			<label index="edit">er i øjeblikket gang med at redigere dette element.</label>
+			<label index="draft_saved">Kladde gemt den </label>
+			<label index="draft_date_format">j M Y G:i:s</label>
+			<label index="you_have_draft">Du har en automatisk gemt kladde. Du kan enten </label>
+			<label index="load">indlæse kladden</label>
+			<label index="or_edit">eller forsætte med at redigere den aktuelle version (dette vil slette din kladde).</label>
+			<label index="draft_outdated">Kladden er forældede, da en anden bruger har</label>
+			<label index="templavoila_update">opdateret dette element. Du bør </label>
+		</languageKey>
 		<languageKey index="de"></languageKey>
 		<languageKey index="no"></languageKey>
 		<languageKey index="it"></languageKey>
