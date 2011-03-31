@@ -102,11 +102,11 @@ Ext.ux.TYPO3.tx_safeedit = Ext.extend(Ext.util.Observable, {
         };			
 				
 				if(!this.conf.is_draft && this.conf.has_draft) {
-						this.messages['draft'] = TYPO3.getLL('you_have_draft') + ' <a href="'+this.get_draft_link()+'">' + TYPO3.getLL('load') + '</a> ' + TYPO3.getLL('or_edit');
+						this.messages['draft'] = TYPO3.jslang.getLL('you_have_draft') + ' <a href="'+this.get_draft_link()+'">' + TYPO3.jslang.getLL('load') + '</a> ' + TYPO3.jslang.getLL('or_edit');
 				}  
 
 				if(this.conf.old_draft) {
-						this.messages['update'] = TYPO3.getLL('draft_outdated') + ' ' + TYPO3.getLL('update_start') + ' ' + TYPO3.getLL('update_change')+ ' <a href="'+this.get_newversion_link()+'">' + TYPO3.getLL('update_newversion') + '</a> ' + TYPO3.getLL('update_or') + ' <a href="" onclick="javascript:TYPO3.tx_safeedit.launch_diff(); return false;">' + TYPO3.getLL('update_newwindow') + '</a> ' + TYPO3.getLL('update_end');
+						this.messages['update'] = TYPO3.jslang.getLL('draft_outdated') + ' ' + TYPO3.jslang.getLL('update_start') + ' ' + TYPO3.jslang.getLL('update_change')+ ' <a href="'+this.get_newversion_link()+'">' + TYPO3.jslang.getLL('update_newversion') + '</a> ' + TYPO3.jslang.getLL('update_or') + ' <a href="" onclick="javascript:TYPO3.tx_safeedit.launch_diff(); return false;">' + TYPO3.jslang.getLL('update_newwindow') + '</a> ' + TYPO3.jslang.getLL('update_end');
 				}
 				
 				Ext.ux.TYPO3.tx_safeedit.superclass.constructor.call(this, config);
@@ -220,9 +220,9 @@ Ext.ux.TYPO3.tx_safeedit = Ext.extend(Ext.util.Observable, {
 						
 						if(data.username!=this.conf.username && elapsed>0) {
 								if(this.is_changes_made()) {
-										this.messages['update'] = TYPO3.getLL('the_beuser') + ' \'' + data.username + '\' ' + TYPO3.getLL('update_start') + ' ' + TYPO3.getLL('update_change') + ' <a href="'+this.get_newversion_link()+'">' + TYPO3.getLL('update_newversion') + '</a> ' + TYPO3.getLL('update_or') + ' <a href="" onclick="javascript:TYPO3.tx_safeedit.launch_diff(); return false;">' + TYPO3.getLL('update_newwindow') + '</a> ' + TYPO3.getLL('update_end');
+										this.messages['update'] = TYPO3.jslang.getLL('the_beuser') + ' \'' + data.username + '\' ' + TYPO3.jslang.getLL('update_start') + ' ' + TYPO3.jslang.getLL('update_change') + ' <a href="'+this.get_newversion_link()+'">' + TYPO3.jslang.getLL('update_newversion') + '</a> ' + TYPO3.jslang.getLL('update_or') + ' <a href="" onclick="javascript:TYPO3.tx_safeedit.launch_diff(); return false;">' + TYPO3.jslang.getLL('update_newwindow') + '</a> ' + TYPO3.jslang.getLL('update_end');
 								} else {
-										this.messages['update'] = TYPO3.getLL('the_beuser') + ' \'' + data.username + '\' ' + TYPO3.getLL('update_start') + ' ' + TYPO3.getLL('update_nochange') + ' <a href="'+this.get_newversion_link()+'">' + TYPO3.getLL('update_newversion') + '</a>.'
+										this.messages['update'] = TYPO3.jslang.getLL('the_beuser') + ' \'' + data.username + '\' ' + TYPO3.jslang.getLL('update_start') + ' ' + TYPO3.jslang.getLL('update_nochange') + ' <a href="'+this.get_newversion_link()+'">' + TYPO3.jslang.getLL('update_newversion') + '</a>.'
 								}
 								this.update_messages();
 						}
@@ -239,14 +239,14 @@ Ext.ux.TYPO3.tx_safeedit = Ext.extend(Ext.util.Observable, {
 								}
 								
 								this.messages['edit'][data.username]['timestamp'] = timestamp;
-								this.messages['edit'][data.username]['text'] = TYPO3.getLL('the_beuser') + ' \'' + data.username + '\' ' + (data.email?'(<a href="mailto:'+data.email+'">'+data.email+'</a>) ':'') + TYPO3.getLL('edit');
+								this.messages['edit'][data.username]['text'] = TYPO3.jslang.getLL('the_beuser') + ' \'' + data.username + '\' ' + (data.email?'(<a href="mailto:'+data.email+'">'+data.email+'</a>) ':'') + TYPO3.jslang.getLL('edit');
 								this.update_messages();
 						}
 
 				} else if(channel==this.draftchannel && elapsed>0) {
 						
 						var date = new Date(parseInt(timestamp*1000));
-						this.messages['draft_saved'] = TYPO3.getLL('draft_saved') + date.format(TYPO3.getLL('draft_date_format'));
+						this.messages['draft_saved'] = TYPO3.jslang.getLL('draft_saved') + date.format(TYPO3.jslang.getLL('draft_date_format'));
 
 						// update diff window
 						if(this.diff_window) {
@@ -310,7 +310,7 @@ Ext.ux.TYPO3.tx_safeedit = Ext.extend(Ext.util.Observable, {
 								}
 						}
 				}
-		},
+		}
 
 });
 

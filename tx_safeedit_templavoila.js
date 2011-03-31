@@ -72,14 +72,14 @@ Ext.ux.TYPO3.tx_safeedit_templavoila = Ext.extend(Ext.util.Observable, {
 				
 				if(channel==this.updatechannel && data.username!=TYPO3.tx_safeedit_templavoila_username && elapsed>0) {
 
-						var result = '<div class="typo3-message message-warning"><div class="message-body"><div id="safeedit-update">'+TYPO3.getLL('the_beuser') + ' \'' + data.username + '\' ' + TYPO3.getLL('templavoila_update') + ' <a href="" onclick="javascript:window.location.href=window.location.href; return false;">' + TYPO3.getLL('update_newversion') + '</a>.</div></div></div>';
+						var result = '<div class="typo3-message message-warning"><div class="message-body"><div id="safeedit-update">'+TYPO3.jslang.getLL('the_beuser') + ' \'' + data.username + '\' ' + TYPO3.jslang.getLL('templavoila_update') + ' <a href="" onclick="javascript:window.location.href=window.location.href; return false;">' + TYPO3.jslang.getLL('update_newversion') + '</a>.</div></div></div>';
 
 						var safeeditMessage = Ext.get('safeedit-message');
 						safeeditMessage.update(result);
 
 				}
 
-		},
+		}
 
 
 });
